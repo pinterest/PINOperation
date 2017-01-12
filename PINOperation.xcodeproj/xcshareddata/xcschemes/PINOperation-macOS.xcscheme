@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6629FFEC1A66B512009C10BD"
-               BuildableName = "PINOperation.framework"
-               BlueprintName = "iOS"
-               ReferencedContainer = "container:PINOperation.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D07F1ED1171AFB7A001DBA02"
-               BuildableName = "PINOperationQueueTests.xctest"
-               BlueprintName = "PINOperationTests"
+               BlueprintIdentifier = "CC0105491E27114300890935"
+               BuildableName = "PINOperation-macOS.framework"
+               BlueprintName = "PINOperation-macOS"
                ReferencedContainer = "container:PINOperation.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D07F1ED1171AFB7A001DBA02"
-               BuildableName = "PINOperationQueueTests.xctest"
-               BlueprintName = "PINOperationTests"
+               BlueprintIdentifier = "CC0105731E27117F00890935"
+               BuildableName = "PINOperation-macOSTests.xctest"
+               BlueprintName = "PINOperation-macOSTests"
                ReferencedContainer = "container:PINOperation.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -56,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6629FFEC1A66B512009C10BD"
-            BuildableName = "PINOperation.framework"
-            BlueprintName = "iOS"
+            BlueprintIdentifier = "CC0105491E27114300890935"
+            BuildableName = "PINOperation-macOS.framework"
+            BlueprintName = "PINOperation-macOS"
             ReferencedContainer = "container:PINOperation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -78,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6629FFEC1A66B512009C10BD"
-            BuildableName = "PINOperation.framework"
-            BlueprintName = "iOS"
+            BlueprintIdentifier = "CC0105491E27114300890935"
+            BuildableName = "PINOperation-macOS.framework"
+            BlueprintName = "PINOperation-macOS"
             ReferencedContainer = "container:PINOperation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -96,9 +82,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6629FFEC1A66B512009C10BD"
-            BuildableName = "PINOperation.framework"
-            BlueprintName = "iOS"
+            BlueprintIdentifier = "CC0105491E27114300890935"
+            BuildableName = "PINOperation-macOS.framework"
+            BlueprintName = "PINOperation-macOS"
             ReferencedContainer = "container:PINOperation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

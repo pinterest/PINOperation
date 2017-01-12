@@ -8,10 +8,8 @@ Pod::Spec.new do |s|
   s.license       = { :type => 'Apache 2.0', :file => 'LICENSE.txt' }
   s.requires_arc  = true
   s.frameworks    = 'Foundation'
-  s.ios.weak_frameworks   = 'UIKit'
-  s.osx.weak_frameworks   = 'AppKit'
-  s.ios.deployment_target = '5.0'
-  s.osx.deployment_target = '10.7'
+  s.ios.deployment_target = '8.0'
+  s.osx.deployment_target = '10.10'
   s.tvos.deployment_target = '9.0'
   s.watchos.deployment_target = '2.0'
   pch_PIN = <<-EOS
@@ -20,8 +18,5 @@ Pod::Spec.new do |s|
 #endif
 EOS
   s.prefix_header_contents = pch_PIN
-  s.subspec 'Core' do |sp|
-      sp.source_files  = 'PINOperation/*.{h,m}'
-  end
-  
+  s.source_files = 'Source/**/*.{h,m,mm}'
 end

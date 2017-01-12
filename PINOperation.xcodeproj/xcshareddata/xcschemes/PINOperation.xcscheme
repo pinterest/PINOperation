@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "962F1E0B1CFC53540086E394"
+               BlueprintIdentifier = "CC01052C1E27110D00890935"
                BuildableName = "PINOperation.framework"
-               BlueprintName = "tvOS"
+               BlueprintName = "PINOperation"
                ReferencedContainer = "container:PINOperation.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,13 +32,22 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D07F1ED1171AFB7A001DBA02"
-               BuildableName = "PINOperationQueueTests.xctest"
+               BlueprintIdentifier = "CC0105551E27116600890935"
+               BuildableName = "PINOperationTests.xctest"
                BlueprintName = "PINOperationTests"
                ReferencedContainer = "container:PINOperation.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "CC01052C1E27110D00890935"
+            BuildableName = "PINOperation.framework"
+            BlueprintName = "PINOperation"
+            ReferencedContainer = "container:PINOperation.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -55,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "962F1E0B1CFC53540086E394"
+            BlueprintIdentifier = "CC01052C1E27110D00890935"
             BuildableName = "PINOperation.framework"
-            BlueprintName = "tvOS"
+            BlueprintName = "PINOperation"
             ReferencedContainer = "container:PINOperation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -73,9 +82,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "962F1E0B1CFC53540086E394"
+            BlueprintIdentifier = "CC01052C1E27110D00890935"
             BuildableName = "PINOperation.framework"
-            BlueprintName = "tvOS"
+            BlueprintName = "PINOperation"
             ReferencedContainer = "container:PINOperation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
