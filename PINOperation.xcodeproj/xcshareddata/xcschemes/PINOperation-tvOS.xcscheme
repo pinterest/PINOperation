@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CC01053C1E27113700890935"
-               BuildableName = "PINOperation-tvOS.framework"
+               BuildableName = "PINOperation.framework"
                BlueprintName = "PINOperation-tvOS"
                ReferencedContainer = "container:PINOperation.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CC01053C1E27113700890935"
-            BuildableName = "PINOperation-tvOS.framework"
+            BuildableName = "PINOperation.framework"
             BlueprintName = "PINOperation-tvOS"
             ReferencedContainer = "container:PINOperation.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CC01053C1E27113700890935"
-            BuildableName = "PINOperation-tvOS.framework"
+            BuildableName = "PINOperation.framework"
             BlueprintName = "PINOperation-tvOS"
             ReferencedContainer = "container:PINOperation.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CC01053C1E27113700890935"
-            BuildableName = "PINOperation-tvOS.framework"
+            BuildableName = "PINOperation.framework"
             BlueprintName = "PINOperation-tvOS"
             ReferencedContainer = "container:PINOperation.xcodeproj">
          </BuildableReference>
