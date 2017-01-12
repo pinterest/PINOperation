@@ -21,7 +21,7 @@ Install the docs by double clicking the `.docset` file under `docs/`, or view th
 
 ### CocoaPods
 
-Add [PINOperation](http://cocoapods.org/?q=name%3APINQueue) to your `Podfile` and run `pod install`.
+Add [PINOperation](http://cocoapods.org/?q=name%3APINOperation) to your `Podfile` and run `pod install`.
 
 ### Carthage
 
@@ -31,7 +31,7 @@ Add the following line to your `Cartfile` and run `carthage update --platform io
 
 ## Requirements
 
-__PINQueue__ requires iOS 5.0 or OS X 10.7 and greater.
+__PINOperation__ requires iOS 8.0 or OS X 10.10 and greater.
 
 ## Contact
 
