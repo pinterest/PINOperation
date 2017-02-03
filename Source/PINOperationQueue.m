@@ -314,6 +314,7 @@
 - (void)scheduleNextOperations:(BOOL)onlyCheckSerial
 {
   [self lock];
+  
     //get next available operation in order, ignoring priority and run it on the serial queue
     if (_serialQueueBusy == NO) {
       PINOperation *operation = [self locked_nextOperationByQueue];
@@ -350,23 +351,23 @@
   }
   
   dispatch_async(_semaphoreQueue, ^{
-      dispatch_semaphore_wait(_concurrentSemaphore, DISPATCH_TIME_FOREVER);
-      [self lock];
-        PINOperation *operation = [self locked_nextOperationByPriority];
-      [self unlock];
-    
-      if (operation) {
-        dispatch_async(_concurrentQueue, ^{
-          operation.block(operation.data);
-          for (dispatch_block_t completion in operation.completions) {
-            completion();
-          }
-          dispatch_group_leave(_group);
-          dispatch_semaphore_signal(_concurrentSemaphore);
-        });
-      } else {
+    dispatch_semaphore_wait(_concurrentSemaphore, DISPATCH_TIME_FOREVER);
+    [self lock];
+      PINOperation *operation = [self locked_nextOperationByPriority];
+    [self unlock];
+  
+    if (operation) {
+      dispatch_async(_concurrentQueue, ^{
+        operation.block(operation.data);
+        for (dispatch_block_t completion in operation.completions) {
+          completion();
+        }
+        dispatch_group_leave(_group);
         dispatch_semaphore_signal(_concurrentSemaphore);
-      }
+      });
+    } else {
+      dispatch_semaphore_signal(_concurrentSemaphore);
+    }
   });
 }
 
