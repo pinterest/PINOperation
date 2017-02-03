@@ -94,7 +94,7 @@
 - (instancetype)initWithMaxConcurrentOperations:(NSUInteger)maxConcurrentOperations concurrentQueue:(dispatch_queue_t)concurrentQueue
 {
   if (self = [super init]) {
-    NSAssert(maxConcurrentOperations > 1, @"Max concurrent operations must be greater than 1. If it's one, just use a serial queue!");
+    NSAssert(maxConcurrentOperations > 0, @"Max concurrent operations must be greater than 0.");
     _maxConcurrentOperations = maxConcurrentOperations;
     _operationReferenceCount = 0;
     
@@ -250,7 +250,7 @@
 
 - (void)setMaxConcurrentOperations:(NSUInteger)maxConcurrentOperations
 {
-  NSAssert(maxConcurrentOperations > 1, @"Max concurrent operations must be greater than 1. If it's one, just use a serial queue!");
+  NSAssert(maxConcurrentOperations > 0, @"Max concurrent operations must be greater than 0.");
   [self lock];
     __block NSInteger difference = maxConcurrentOperations - _maxConcurrentOperations;
     _maxConcurrentOperations = maxConcurrentOperations;
@@ -335,9 +335,17 @@
         });
       }
     }
+  
+  NSInteger maxConcurrentOperations = _maxConcurrentOperations;
+  
   [self unlock];
   
   if (onlyCheckSerial) {
+    return;
+  }
+
+  //if only one concurrent operation is set, let's just use the serial queue for executing it
+  if (maxConcurrentOperations < 2) {
     return;
   }
   
