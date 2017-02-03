@@ -18,6 +18,7 @@ static NSTimeInterval PINOperationQueueTestBlockTimeout = 20;
 
 @end
 
+static const NSUInteger PINOperationQueueTestsLowestMaxOperations = 1;
 static const NSUInteger PINOperationQueueTestsMaxOperations = 5;
 
 @implementation PINOperationQueueTests
@@ -173,6 +174,12 @@ static const NSUInteger PINOperationQueueTestsMaxOperations = 5;
 - (void)testMaximumNumberOfConcurrentOperations
 {
   [self helperConfirmMaxOperations:PINOperationQueueTestsMaxOperations queue:self.queue];
+}
+
+- (void)testMaximumNumberOfConcurrentOperationsIsOne
+{
+  self.queue = [[PINOperationQueue alloc] initWithMaxConcurrentOperations:PINOperationQueueTestsLowestMaxOperations];
+  [self helperConfirmMaxOperations:PINOperationQueueTestsLowestMaxOperations queue:self.queue];
 }
 
 //We expect operations to run in priority order when added in that order as well
