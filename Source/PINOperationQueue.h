@@ -67,16 +67,16 @@ PINOP_SUBCLASSING_RESTRICTED
  *
  * @param operation The operation object to be added to the queue.
  * @param priority The execution priority of the operation in an operation queue.
- * @param identifier A string that identifies the operations that can be coalesced
- * @param coalescingData  
- * @param dataCoalescingBlock
+ * @param identifier A string that identifies the operations that can be coalesced.
+ * @param coalescingData The optional data consumed by this operation that needs to be updated/coalesced with data of a new operation when coalescing the two operations happens.
+ * @param dataCoalescingBlock The optional block called to update/coalesce the data of this operation with data of a new operation when coalescing the two operations happens.
  * @param completion The block to execute after the operation finished.
  *
  * @discussion
  */
 - (id <PINOperationReference>)addOperation:(PINOperationBlock)operation
                               withPriority:(PINOperationQueuePriority)priority
-                                identifier:(NSString *)identifier
+                                identifier:(nullable NSString *)identifier
                             coalescingData:(nullable id)coalescingData
                        dataCoalescingBlock:(nullable PINOperationDataCoalescingBlock)dataCoalescingBlock
                                 completion:(nullable dispatch_block_t)completion;
