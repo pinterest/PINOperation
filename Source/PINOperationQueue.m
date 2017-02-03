@@ -183,7 +183,7 @@
   [self lock];
     PINOperation *operation = nil;
     if (identifier != nil && (operation = [_identifierToOperations objectForKey:identifier]) != nil) {
-      // There is an exisiting operation with the provided identifier, let's coallesce these operations
+      // There is an exisiting operation with the provided identifier, let's coalesce these operations
       if (dataCoalescingBlock != nil) {
         operation.data = dataCoalescingBlock(operation.data, coalescingData);
       }
