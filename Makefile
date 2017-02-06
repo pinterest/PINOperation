@@ -8,7 +8,7 @@ lint:
 	pod lib lint --allow-warnings
 
 test:
-	xcodebuild clean test -destination ${PLATFORM} -sdk ${SDK} -project tests/PINOperation.xcodeproj -scheme PINOperationTests ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO | xcpretty
+	xcodebuild clean test -destination ${PLATFORM} -sdk ${SDK} -project PINOperation.xcodeproj -scheme PINOperation ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO | xcpretty
 
 carthage:
 	carthage build --no-skip-current
