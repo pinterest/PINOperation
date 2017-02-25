@@ -139,7 +139,10 @@
 				CC0105571E27116600890935 /* Tests */,
 				CC01052E1E27110D00890935 /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
 		};
 		CC01052E1E27110D00890935 /* Products */ = {
 			isa = PBXGroup;

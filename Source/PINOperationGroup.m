@@ -58,7 +58,7 @@
 
 - (void)dealloc
 {
-    pthread_mutex_destroy(&_lock);
+  pthread_mutex_destroy(&_lock);
 }
 
 + (instancetype)asyncOperationGroupWithQueue:(PINOperationQueue *)operationQueue
