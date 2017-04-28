@@ -27,7 +27,6 @@
   dispatch_group_t _group;
   
   dispatch_block_t _completion;
-  dispatch_queue_t _completionQueue;
   
   BOOL _started;
   BOOL _canceled;
@@ -90,17 +89,9 @@
       }
       
       if (_completion) {
-        dispatch_queue_t completionQueue = _completionQueue ? _completionQueue : dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+        dispatch_queue_t completionQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
         dispatch_group_notify(_group, completionQueue, ^{
-          dispatch_block_t completion;
-          [self lock];
-            completion = _completion;
-            _completion = nil;
-          [self unlock];
-          
-          if (completion) {
-            completion();
-          }
+          [self runCompletionIfNeeded];
         });
       }
       
@@ -167,6 +158,20 @@
 {
   [self start];
   dispatch_group_wait(_group, DISPATCH_TIME_FOREVER);
+  [self runCompletionIfNeeded];
+}
+
+- (void)runCompletionIfNeeded
+{
+  dispatch_block_t completion;
+  [self lock];
+    completion = _completion;
+    _completion = nil;
+  [self unlock];
+
+  if (completion) {
+    completion();
+  }
 }
 
 - (void)lock
