@@ -148,12 +148,24 @@
   return reference;
 }
 
+// Deprecated
 - (id <PINOperationReference>)addOperation:(dispatch_block_t)block
 {
-  return [self addOperation:block withPriority:PINOperationQueuePriorityDefault];
+  return [self scheduleOperation:block];
 }
 
+- (id <PINOperationReference>)scheduleOperation:(dispatch_block_t)block
+{
+  return [self scheduleOperation:block withPriority:PINOperationQueuePriorityDefault];
+}
+
+// Deprecated
 - (id <PINOperationReference>)addOperation:(dispatch_block_t)block withPriority:(PINOperationQueuePriority)priority
+{
+  return [self scheduleOperation:block withPriority:priority];
+}
+
+- (id <PINOperationReference>)scheduleOperation:(dispatch_block_t)block withPriority:(PINOperationQueuePriority)priority
 {
   PINOperation *operation = [PINOperation operationWithBlock:^(id data) { block(); }
                                                    reference:[self nextOperationReference]
@@ -170,12 +182,28 @@
   return operation.reference;
 }
 
+// Deprecated
 - (id<PINOperationReference>)addOperation:(PINOperationBlock)block
                              withPriority:(PINOperationQueuePriority)priority
                                identifier:(NSString *)identifier
                            coalescingData:(id)coalescingData
                       dataCoalescingBlock:(PINOperationDataCoalescingBlock)dataCoalescingBlock
                                completion:(dispatch_block_t)completion
+{
+  return [self scheduleOperation:block
+                    withPriority:priority
+                      identifier:identifier
+                  coalescingData:coalescingData
+             dataCoalescingBlock:dataCoalescingBlock
+                      completion:completion];
+}
+
+- (id<PINOperationReference>)scheduleOperation:(PINOperationBlock)block
+                                  withPriority:(PINOperationQueuePriority)priority
+                                    identifier:(NSString *)identifier
+                                coalescingData:(id)coalescingData
+                           dataCoalescingBlock:(PINOperationDataCoalescingBlock)dataCoalescingBlock
+                                    completion:(dispatch_block_t)completion
 {
   id<PINOperationReference> reference = nil;
   BOOL isNewOperation = NO;
