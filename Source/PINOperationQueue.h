@@ -50,7 +50,7 @@ PINOP_SUBCLASSING_RESTRICTED
  * @param operation The operation object to be added to the queue.
  *
  */
-- (id <PINOperationReference>)addOperation:(dispatch_block_t)operation;
+- (id <PINOperationReference>)scheduleOperation:(dispatch_block_t)operation;
 
 /**
  * Adds the specified operation object to the receiver.
@@ -60,7 +60,7 @@ PINOP_SUBCLASSING_RESTRICTED
  *
  * @discussion
  */
-- (id <PINOperationReference>)addOperation:(dispatch_block_t)operation withPriority:(PINOperationQueuePriority)priority;
+- (id <PINOperationReference>)scheduleOperation:(dispatch_block_t)operation withPriority:(PINOperationQueuePriority)priority;
 
 /**
  * Adds the specified operation object to the receiver.
@@ -74,12 +74,12 @@ PINOP_SUBCLASSING_RESTRICTED
  *
  * @discussion
  */
-- (id <PINOperationReference>)addOperation:(PINOperationBlock)operation
-                              withPriority:(PINOperationQueuePriority)priority
-                                identifier:(nullable NSString *)identifier
-                            coalescingData:(nullable id)coalescingData
-                       dataCoalescingBlock:(nullable PINOperationDataCoalescingBlock)dataCoalescingBlock
-                                completion:(nullable dispatch_block_t)completion;
+- (id <PINOperationReference>)scheduleOperation:(PINOperationBlock)operation
+                                   withPriority:(PINOperationQueuePriority)priority
+                                     identifier:(nullable NSString *)identifier
+                                 coalescingData:(nullable id)coalescingData
+                            dataCoalescingBlock:(nullable PINOperationDataCoalescingBlock)dataCoalescingBlock
+                                     completion:(nullable dispatch_block_t)completion;
 
 /**
  * The maximum number of queued operations that can execute at the same time.
@@ -122,6 +122,19 @@ PINOP_SUBCLASSING_RESTRICTED
  *
  */
 - (void)setOperationPriority:(PINOperationQueuePriority)priority withReference:(id <PINOperationReference>)reference;
+
+#pragma mark - Deprecated
+
+- (id <PINOperationReference>)addOperation:(dispatch_block_t)operation __deprecated_msg("Use scheduleOperation: instead.");
+
+- (id <PINOperationReference>)addOperation:(dispatch_block_t)operation withPriority:(PINOperationQueuePriority)priority __deprecated_msg("Use scheduleOperation:withPriority: instead.");
+
+- (id <PINOperationReference>)addOperation:(PINOperationBlock)operation
+                              withPriority:(PINOperationQueuePriority)priority
+                                identifier:(nullable NSString *)identifier
+                            coalescingData:(nullable id)coalescingData
+                       dataCoalescingBlock:(nullable PINOperationDataCoalescingBlock)dataCoalescingBlock
+                                completion:(nullable dispatch_block_t)completion __deprecated_msg("Use scheduleOperation:withPriority:identifier:coalescingData:dataCoalescingBlock:completion: instead.");
 
 @end
 

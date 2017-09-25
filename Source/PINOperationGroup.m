@@ -84,7 +84,7 @@
           dispatch_group_leave(_group);
         };
         
-        id <PINOperationReference> operationReference = [_operationQueue addOperation:groupBlock withPriority:[_operationPriorities[idx] unsignedIntegerValue]];
+        id <PINOperationReference> operationReference = [_operationQueue scheduleOperation:groupBlock withPriority:[_operationPriorities[idx] unsignedIntegerValue]];
         [_groupToOperationReferences setObject:operationReference forKey:_operationReferences[idx]];
       }
       
