@@ -8,7 +8,7 @@ carthage:
 	carthage build --no-skip-current
 
 lint:
-	pod lib lint --allow-warnings
+	pod lib lint
 
 analyze:
 	xcodebuild clean analyze -destination ${PLATFORM} -sdk ${SDK} -project PINOperation.xcodeproj -scheme PINOperation \
