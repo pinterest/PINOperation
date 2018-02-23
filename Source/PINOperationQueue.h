@@ -57,8 +57,6 @@ PINOP_SUBCLASSING_RESTRICTED
  *
  * @param operation The operation object to be added to the queue.
  * @param priority The execution priority of the operation in an operation queue.
- *
- * @discussion
  */
 - (id <PINOperationReference>)scheduleOperation:(dispatch_block_t)operation withPriority:(PINOperationQueuePriority)priority;
 
@@ -71,8 +69,6 @@ PINOP_SUBCLASSING_RESTRICTED
  * @param coalescingData The optional data consumed by this operation that needs to be updated/coalesced with data of a new operation when coalescing the two operations happens.
  * @param dataCoalescingBlock The optional block called to update/coalesce the data of this operation with data of a new operation when coalescing the two operations happens.
  * @param completion The block to execute after the operation finished.
- *
- * @discussion
  */
 - (id <PINOperationReference>)scheduleOperation:(PINOperationBlock)operation
                                    withPriority:(PINOperationQueuePriority)priority
