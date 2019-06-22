@@ -133,7 +133,7 @@
 {
   [self lock];
     id <PINGroupOperationReference> reference = nil;
-    NSAssert(_started == NO && _canceled == NO, @"Operation group already canceled.");
+    NSAssert(_started == NO && _canceled == NO, @"Operation group already started or canceled.");
     if (_started == NO && _canceled == NO) {
       reference = [self locked_nextOperationReference];
       [_operations addObject:operation];
@@ -148,7 +148,7 @@
 - (void)setCompletion:(dispatch_block_t)completion
 {
   [self lock];
-    NSAssert(_started == NO && _canceled == NO, @"Operation group already canceled.");
+    NSAssert(_started == NO && _canceled == NO, @"Operation group already started or canceled.");
     if (_started == NO && _canceled == NO) {
       _completion = completion;
     }
