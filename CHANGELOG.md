@@ -1,6 +1,8 @@
 ## master
 * Add your own contributions to the next release on the line below this with your name.
 
+- [fix] Fix group can add operations and set completion multiple times when the group start. [#22](https://github.com/pinterest/PINOperation/pull/22)
+
 ## 1.1.1 -- 2018 February 3
 * Cleanup warnings [garrett](https://github.com/garrettmoon)
 

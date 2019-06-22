@@ -28,6 +28,7 @@
   
   dispatch_block_t _completion;
   
+  BOOL _started;
   BOOL _canceled;
 }
 
@@ -74,7 +75,8 @@
 {
   [self lock];
     NSAssert(_canceled == NO, @"Operation group canceled.");
-    if (_canceled == NO) {
+    if (_started == NO && _canceled == NO) {
+      _started = YES;
       for (NSUInteger idx = 0; idx < _operations.count; idx++) {
         dispatch_group_enter(_group);
         dispatch_block_t originalOperation = _operations[idx];
@@ -131,8 +133,8 @@
 {
   [self lock];
     id <PINGroupOperationReference> reference = nil;
-    NSAssert(_canceled == NO, @"Operation group already canceled.");
-    if (_canceled == NO) {
+    NSAssert(_started == NO && _canceled == NO, @"Operation group already canceled.");
+    if (_started == NO && _canceled == NO) {
       reference = [self locked_nextOperationReference];
       [_operations addObject:operation];
       [_operationPriorities addObject:@(priority)];
@@ -146,8 +148,8 @@
 - (void)setCompletion:(dispatch_block_t)completion
 {
   [self lock];
-    NSAssert(_canceled == NO, @"Operation group already canceled.");
-    if (_canceled == NO) {
+    NSAssert(_started == NO && _canceled == NO, @"Operation group already canceled.");
+    if (_started == NO && _canceled == NO) {
       _completion = completion;
     }
   [self unlock];
@@ -166,6 +168,7 @@
   [self lock];
     completion = _completion;
     _completion = nil;
+    _started = NO;
   [self unlock];
 
   if (completion) {
