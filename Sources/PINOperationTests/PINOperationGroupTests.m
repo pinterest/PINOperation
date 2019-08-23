@@ -10,7 +10,7 @@
 
 #import <pthread.h>
 
-#import <PINOperation/PINOperation.h>
+#import "PINOperation.h"
 
 static NSTimeInterval PINOperationGroupTestBlockTimeout = 20;
 

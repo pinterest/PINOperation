@@ -2,10 +2,13 @@ PLATFORM="platform=iOS Simulator,name=iPhone 7"
 SDK="iphonesimulator"
 SHELL=/bin/bash -o pipefail
 
-.PHONY: all lint test analyze carthage
+.PHONY: all lint test analyze carthage swiftPM
 	
 carthage:
 	carthage build --no-skip-current
+
+swiftPM:
+	swift build
 
 lint:
 	pod lib lint
@@ -24,4 +27,4 @@ test:
 	ONLY_ACTIVE_ARCH=NO \
 	CODE_SIGNING_REQUIRED=NO | xcpretty
 
-all: carthage lint test analyze
+all: carthage swiftPM lint test analyze

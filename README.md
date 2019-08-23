@@ -1,8 +1,10 @@
 # PINOperation
 
+[![Build status](https://badge.buildkite.com/665147e3b6852a9c1c3a3df3ced779c32bc6396ba69fee4b6e.svg?branch=master&style=flat)](https://buildkite.com/pinterest/pinoperation)
 [![CocoaPods](https://img.shields.io/cocoapods/v/PINOperation.svg)](http://cocoadocs.org/docsets/PINOperation/)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![Build status](https://badge.buildkite.com/665147e3b6852a9c1c3a3df3ced779c32bc6396ba69fee4b6e.svg?branch=master&style=flat)](https://buildkite.com/pinterest/pinoperation)
+[![Swift Package Manager](https://img.shields.io/badge/Swift%20Package%20Manager%20-compatible-brightgreen)](https://swift.org/package-manager/)]
+[![Supported platforms](https://img.shields.io/cocoapods/p/PINOperation)]()]
 
 ## Fast, concurrency-limited task queue for iOS and macOS.
 
@@ -29,9 +31,13 @@ Add the following line to your `Cartfile` and run `carthage update --platform io
 
 ```github "pinterest/PINOperation"```
 
+### Swift Package Manager
+
+```.package(url: "https://github.com/pinterest/PINOperation", .upToNextMajor(from: "1.1.3"))```
+
 ## Requirements
 
-__PINOperation__ requires iOS 5.0 or OS X 10.8 and greater.
+Since 1.1.3 __PINOperation__ requires iOS 8.0/watchOS 2.0/tvOS 9.0 or OS X 10.10 and greater. If you need to target lower versions please use PINOperation 1.1.2.
 
 ## Contact
 

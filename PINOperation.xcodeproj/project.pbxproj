@@ -6,232 +6,211 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		"PINOperation::PINOperationPackageTests::ProductTarget" /* PINOperationPackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_56 /* Build configuration list for PBXAggregateTarget "PINOperationPackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_59 /* PBXTargetDependency */,
+			);
+			name = PINOperationPackageTests;
+			productName = PINOperationPackageTests;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		CC01055B1E27116600890935 /* PINOperation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC01052D1E27110D00890935 /* PINOperation.framework */; };
-		CC01056A1E27117300890935 /* PINOperation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC01053D1E27113700890935 /* PINOperation.framework */; };
-		CC0105791E27117F00890935 /* PINOperation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC01054A1E27114300890935 /* PINOperation.framework */; };
-		CC0105871E2711B700890935 /* PINOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = CC0105801E2711B700890935 /* PINOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC0105881E2711B700890935 /* PINOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = CC0105801E2711B700890935 /* PINOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC0105891E2711B700890935 /* PINOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = CC0105801E2711B700890935 /* PINOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC01058A1E2711B700890935 /* PINOperationGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = CC0105811E2711B700890935 /* PINOperationGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC01058B1E2711B700890935 /* PINOperationGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = CC0105811E2711B700890935 /* PINOperationGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC01058C1E2711B700890935 /* PINOperationGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = CC0105811E2711B700890935 /* PINOperationGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC01058D1E2711B700890935 /* PINOperationGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0105821E2711B700890935 /* PINOperationGroup.m */; };
-		CC01058E1E2711B700890935 /* PINOperationGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0105821E2711B700890935 /* PINOperationGroup.m */; };
-		CC01058F1E2711B700890935 /* PINOperationGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0105821E2711B700890935 /* PINOperationGroup.m */; };
-		CC0105901E2711B700890935 /* PINOperationMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = CC0105831E2711B700890935 /* PINOperationMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC0105911E2711B700890935 /* PINOperationMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = CC0105831E2711B700890935 /* PINOperationMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC0105921E2711B700890935 /* PINOperationMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = CC0105831E2711B700890935 /* PINOperationMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC0105931E2711B700890935 /* PINOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = CC0105841E2711B700890935 /* PINOperationQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC0105941E2711B700890935 /* PINOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = CC0105841E2711B700890935 /* PINOperationQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC0105951E2711B700890935 /* PINOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = CC0105841E2711B700890935 /* PINOperationQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC0105961E2711B700890935 /* PINOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0105851E2711B700890935 /* PINOperationQueue.m */; };
-		CC0105971E2711B700890935 /* PINOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0105851E2711B700890935 /* PINOperationQueue.m */; };
-		CC0105981E2711B700890935 /* PINOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0105851E2711B700890935 /* PINOperationQueue.m */; };
-		CC0105991E2711B700890935 /* PINOperationTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = CC0105861E2711B700890935 /* PINOperationTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC01059A1E2711B700890935 /* PINOperationTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = CC0105861E2711B700890935 /* PINOperationTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC01059B1E2711B700890935 /* PINOperationTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = CC0105861E2711B700890935 /* PINOperationTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC0105A01E27131B00890935 /* PINOperationQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC01059D1E27131B00890935 /* PINOperationQueueTests.m */; };
-		CC0105A11E27131B00890935 /* PINOperationQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC01059D1E27131B00890935 /* PINOperationQueueTests.m */; };
-		CC0105A21E27131B00890935 /* PINOperationQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC01059D1E27131B00890935 /* PINOperationQueueTests.m */; };
-		CC0105A41E27131B00890935 /* PINOperationGroupTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC01059E1E27131B00890935 /* PINOperationGroupTests.m */; };
-		CC0105A51E27131B00890935 /* PINOperationGroupTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC01059E1E27131B00890935 /* PINOperationGroupTests.m */; };
-		CC0105A61E27131B00890935 /* PINOperationGroupTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC01059E1E27131B00890935 /* PINOperationGroupTests.m */; };
+		0A8F1544231024A500AA7D8B /* PINOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* PINOperationQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A8F1545231024A500AA7D8B /* PINOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* PINOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A8F1546231024A500AA7D8B /* PINOperationGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* PINOperationGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A8F1547231024A500AA7D8B /* PINOperationMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* PINOperationMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A8F1548231024A500AA7D8B /* PINOperationTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* PINOperationTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		OBJ_46 /* PINOperationGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* PINOperationGroup.m */; };
+		OBJ_47 /* PINOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* PINOperationQueue.m */; };
+		OBJ_54 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_65 /* PINOperationGroupTests.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* PINOperationGroupTests.m */; };
+		OBJ_66 /* PINOperationQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* PINOperationQueueTests.m */; };
+		OBJ_68 /* PINOperation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PINOperation::PINOperation::Product" /* PINOperation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CC01055C1E27116600890935 /* PBXContainerItemProxy */ = {
+		0A8F15412310245900AA7D8B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CC0105241E27110D00890935 /* Project object */;
+			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CC01052C1E27110D00890935;
+			remoteGlobalIDString = "PINOperation::PINOperation";
 			remoteInfo = PINOperation;
 		};
-		CC01056B1E27117300890935 /* PBXContainerItemProxy */ = {
+		0A8F15422310245900AA7D8B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CC0105241E27110D00890935 /* Project object */;
+			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CC01053C1E27113700890935;
-			remoteInfo = "PINOperation-tvOS";
-		};
-		CC01057A1E27117F00890935 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CC0105241E27110D00890935 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CC0105491E27114300890935;
-			remoteInfo = "PINOperation-macOS";
+			remoteGlobalIDString = "PINOperation::PINOperationTests";
+			remoteInfo = PINOperationTests;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CC01052D1E27110D00890935 /* PINOperation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PINOperation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC01053D1E27113700890935 /* PINOperation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PINOperation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC01054A1E27114300890935 /* PINOperation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PINOperation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC0105561E27116600890935 /* PINOperationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PINOperationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC01055A1E27116600890935 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Tests/Info.plist; sourceTree = "<group>"; };
-		CC0105651E27117300890935 /* PINOperation-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PINOperation-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC0105741E27117F00890935 /* PINOperation-macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PINOperation-macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC0105801E2711B700890935 /* PINOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINOperation.h; sourceTree = "<group>"; };
-		CC0105811E2711B700890935 /* PINOperationGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINOperationGroup.h; sourceTree = "<group>"; };
-		CC0105821E2711B700890935 /* PINOperationGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PINOperationGroup.m; sourceTree = "<group>"; };
-		CC0105831E2711B700890935 /* PINOperationMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINOperationMacros.h; sourceTree = "<group>"; };
-		CC0105841E2711B700890935 /* PINOperationQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINOperationQueue.h; sourceTree = "<group>"; };
-		CC0105851E2711B700890935 /* PINOperationQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PINOperationQueue.m; sourceTree = "<group>"; };
-		CC0105861E2711B700890935 /* PINOperationTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINOperationTypes.h; sourceTree = "<group>"; };
-		CC01059C1E27129E00890935 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CC01059D1E27131B00890935 /* PINOperationQueueTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PINOperationQueueTests.m; sourceTree = "<group>"; };
-		CC01059E1E27131B00890935 /* PINOperationGroupTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PINOperationGroupTests.m; sourceTree = "<group>"; };
+		OBJ_10 /* PINOperationGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PINOperationGroup.m; sourceTree = "<group>"; };
+		OBJ_11 /* PINOperationQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PINOperationQueue.m; sourceTree = "<group>"; };
+		OBJ_13 /* PINOperationQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PINOperationQueue.h; sourceTree = "<group>"; };
+		OBJ_14 /* PINOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PINOperation.h; sourceTree = "<group>"; };
+		OBJ_15 /* PINOperationGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PINOperationGroup.h; sourceTree = "<group>"; };
+		OBJ_16 /* PINOperationMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PINOperationMacros.h; sourceTree = "<group>"; };
+		OBJ_17 /* PINOperationTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PINOperationTypes.h; sourceTree = "<group>"; };
+		OBJ_21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		OBJ_22 /* PINOperationGroupTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PINOperationGroupTests.m; sourceTree = "<group>"; };
+		OBJ_23 /* PINOperationQueueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PINOperationQueueTests.m; sourceTree = "<group>"; };
+		OBJ_27 /* CI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CI; sourceTree = SOURCE_ROOT; };
+		OBJ_28 /* Carthage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Carthage; sourceTree = SOURCE_ROOT; };
+		OBJ_29 /* docs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = docs; sourceTree = SOURCE_ROOT; };
+		OBJ_30 /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
+		OBJ_31 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		OBJ_32 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		OBJ_33 /* build_tests.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build_tests.sh; sourceTree = "<group>"; };
+		OBJ_34 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_35 /* BUCK */ = {isa = PBXFileReference; lastKnownFileType = text; path = BUCK; sourceTree = "<group>"; };
+		OBJ_36 /* Dangerfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Dangerfile; sourceTree = "<group>"; };
+		OBJ_37 /* PINOperation.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = PINOperation.podspec; sourceTree = "<group>"; };
+		OBJ_38 /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
+		OBJ_39 /* build_docs.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build_docs.sh; sourceTree = "<group>"; };
+		OBJ_40 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		"PINOperation::PINOperation::Product" /* PINOperation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PINOperation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"PINOperation::PINOperationTests::Product" /* PINOperationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = PINOperationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CC0105291E27110D00890935 /* Frameworks */ = {
+		OBJ_48 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC0105391E27113700890935 /* Frameworks */ = {
+		OBJ_67 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CC0105461E27114300890935 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CC0105531E27116600890935 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC01055B1E27116600890935 /* PINOperation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CC0105621E27117300890935 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC01056A1E27117300890935 /* PINOperation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CC0105711E27117F00890935 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC0105791E27117F00890935 /* PINOperation.framework in Frameworks */,
+				OBJ_68 /* PINOperation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CC0105231E27110D00890935 = {
+		OBJ_12 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				CC01057F1E2711B700890935 /* Source */,
-				CC0105571E27116600890935 /* Tests */,
-				CC01052E1E27110D00890935 /* Products */,
+				OBJ_13 /* PINOperationQueue.h */,
+				OBJ_14 /* PINOperation.h */,
+				OBJ_15 /* PINOperationGroup.h */,
+				OBJ_16 /* PINOperationMacros.h */,
+				OBJ_17 /* PINOperationTypes.h */,
 			);
-			indentWidth = 2;
+			path = include;
 			sourceTree = "<group>";
-			tabWidth = 2;
-			usesTabs = 0;
 		};
-		CC01052E1E27110D00890935 /* Products */ = {
+		OBJ_19 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				CC01052D1E27110D00890935 /* PINOperation.framework */,
-				CC01053D1E27113700890935 /* PINOperation.framework */,
-				CC01054A1E27114300890935 /* PINOperation.framework */,
-				CC0105561E27116600890935 /* PINOperationTests.xctest */,
-				CC0105651E27117300890935 /* PINOperation-tvOSTests.xctest */,
-				CC0105741E27117F00890935 /* PINOperation-macOSTests.xctest */,
+				OBJ_20 /* PINOperationTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_20 /* PINOperationTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_21 /* Info.plist */,
+				OBJ_22 /* PINOperationGroupTests.m */,
+				OBJ_23 /* PINOperationQueueTests.m */,
+			);
+			name = PINOperationTests;
+			path = Sources/PINOperationTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"PINOperation::PINOperation::Product" /* PINOperation.framework */,
+				"PINOperation::PINOperationTests::Product" /* PINOperationTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
+			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		CC0105571E27116600890935 /* Tests */ = {
+		OBJ_5 /*  */ = {
 			isa = PBXGroup;
 			children = (
-				CC01059D1E27131B00890935 /* PINOperationQueueTests.m */,
-				CC01059E1E27131B00890935 /* PINOperationGroupTests.m */,
-				CC01055A1E27116600890935 /* Info.plist */,
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_19 /* Tests */,
+				OBJ_24 /* Products */,
+				OBJ_27 /* CI */,
+				OBJ_28 /* Carthage */,
+				OBJ_29 /* docs */,
+				OBJ_30 /* CODE_OF_CONDUCT.md */,
+				OBJ_31 /* CHANGELOG.md */,
+				OBJ_32 /* Makefile */,
+				OBJ_33 /* build_tests.sh */,
+				OBJ_34 /* README.md */,
+				OBJ_35 /* BUCK */,
+				OBJ_36 /* Dangerfile */,
+				OBJ_37 /* PINOperation.podspec */,
+				OBJ_38 /* Gemfile */,
+				OBJ_39 /* build_docs.sh */,
+				OBJ_40 /* LICENSE.txt */,
 			);
-			path = Tests;
+			name = "";
 			sourceTree = "<group>";
 		};
-		CC01057F1E2711B700890935 /* Source */ = {
+		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				CC0105801E2711B700890935 /* PINOperation.h */,
-				CC0105811E2711B700890935 /* PINOperationGroup.h */,
-				CC0105831E2711B700890935 /* PINOperationMacros.h */,
-				CC0105841E2711B700890935 /* PINOperationQueue.h */,
-				CC0105861E2711B700890935 /* PINOperationTypes.h */,
-				CC0105821E2711B700890935 /* PINOperationGroup.m */,
-				CC0105851E2711B700890935 /* PINOperationQueue.m */,
-				CC01059C1E27129E00890935 /* Info.plist */,
+				OBJ_8 /* PINOperation */,
 			);
-			path = Source;
-			sourceTree = "<group>";
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* PINOperation */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* Info.plist */,
+				OBJ_10 /* PINOperationGroup.m */,
+				OBJ_11 /* PINOperationQueue.m */,
+				OBJ_12 /* include */,
+			);
+			name = PINOperation;
+			path = Sources/PINOperation;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		CC01052A1E27110D00890935 /* Headers */ = {
+		0A8F15432310249400AA7D8B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC0105991E2711B700890935 /* PINOperationTypes.h in Headers */,
-				CC0105871E2711B700890935 /* PINOperation.h in Headers */,
-				CC01058A1E2711B700890935 /* PINOperationGroup.h in Headers */,
-				CC0105901E2711B700890935 /* PINOperationMacros.h in Headers */,
-				CC0105931E2711B700890935 /* PINOperationQueue.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CC01053A1E27113700890935 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC01059A1E2711B700890935 /* PINOperationTypes.h in Headers */,
-				CC0105881E2711B700890935 /* PINOperation.h in Headers */,
-				CC01058B1E2711B700890935 /* PINOperationGroup.h in Headers */,
-				CC0105911E2711B700890935 /* PINOperationMacros.h in Headers */,
-				CC0105941E2711B700890935 /* PINOperationQueue.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CC0105471E27114300890935 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC01059B1E2711B700890935 /* PINOperationTypes.h in Headers */,
-				CC0105891E2711B700890935 /* PINOperation.h in Headers */,
-				CC01058C1E2711B700890935 /* PINOperationGroup.h in Headers */,
-				CC0105921E2711B700890935 /* PINOperationMacros.h in Headers */,
-				CC0105951E2711B700890935 /* PINOperationQueue.h in Headers */,
+				0A8F1544231024A500AA7D8B /* PINOperationQueue.h in Headers */,
+				0A8F1545231024A500AA7D8B /* PINOperation.h in Headers */,
+				0A8F1546231024A500AA7D8B /* PINOperationGroup.h in Headers */,
+				0A8F1547231024A500AA7D8B /* PINOperationMacros.h in Headers */,
+				0A8F1548231024A500AA7D8B /* PINOperationTypes.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		CC01052C1E27110D00890935 /* PINOperation */ = {
+		"PINOperation::PINOperation" /* PINOperation */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CC0105351E27110D00890935 /* Build configuration list for PBXNativeTarget "PINOperation" */;
+			buildConfigurationList = OBJ_42 /* Build configuration list for PBXNativeTarget "PINOperation" */;
 			buildPhases = (
-				CC0105281E27110D00890935 /* Sources */,
-				CC0105291E27110D00890935 /* Frameworks */,
-				CC01052A1E27110D00890935 /* Headers */,
-				CC01052B1E27110D00890935 /* Resources */,
+				0A8F15432310249400AA7D8B /* Headers */,
+				OBJ_45 /* Sources */,
+				OBJ_48 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -239,641 +218,365 @@
 			);
 			name = PINOperation;
 			productName = PINOperation;
-			productReference = CC01052D1E27110D00890935 /* PINOperation.framework */;
+			productReference = "PINOperation::PINOperation::Product" /* PINOperation.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CC01053C1E27113700890935 /* PINOperation-tvOS */ = {
+		"PINOperation::PINOperationTests" /* PINOperationTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CC0105421E27113700890935 /* Build configuration list for PBXNativeTarget "PINOperation-tvOS" */;
+			buildConfigurationList = OBJ_61 /* Build configuration list for PBXNativeTarget "PINOperationTests" */;
 			buildPhases = (
-				CC0105381E27113700890935 /* Sources */,
-				CC0105391E27113700890935 /* Frameworks */,
-				CC01053A1E27113700890935 /* Headers */,
-				CC01053B1E27113700890935 /* Resources */,
+				OBJ_64 /* Sources */,
+				OBJ_67 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = "PINOperation-tvOS";
-			productName = "PINOperation-tvOS";
-			productReference = CC01053D1E27113700890935 /* PINOperation.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		CC0105491E27114300890935 /* PINOperation-macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CC01054F1E27114300890935 /* Build configuration list for PBXNativeTarget "PINOperation-macOS" */;
-			buildPhases = (
-				CC0105451E27114300890935 /* Sources */,
-				CC0105461E27114300890935 /* Frameworks */,
-				CC0105471E27114300890935 /* Headers */,
-				CC0105481E27114300890935 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "PINOperation-macOS";
-			productName = "PINOperation-macOS";
-			productReference = CC01054A1E27114300890935 /* PINOperation.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		CC0105551E27116600890935 /* PINOperationTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CC01055E1E27116600890935 /* Build configuration list for PBXNativeTarget "PINOperationTests" */;
-			buildPhases = (
-				CC0105521E27116600890935 /* Sources */,
-				CC0105531E27116600890935 /* Frameworks */,
-				CC0105541E27116600890935 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CC01055D1E27116600890935 /* PBXTargetDependency */,
+				OBJ_69 /* PBXTargetDependency */,
 			);
 			name = PINOperationTests;
 			productName = PINOperationTests;
-			productReference = CC0105561E27116600890935 /* PINOperationTests.xctest */;
+			productReference = "PINOperation::PINOperationTests::Product" /* PINOperationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CC0105641E27117300890935 /* PINOperation-tvOSTests */ = {
+		"PINOperation::SwiftPMPackageDescription" /* PINOperationPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CC01056D1E27117300890935 /* Build configuration list for PBXNativeTarget "PINOperation-tvOSTests" */;
+			buildConfigurationList = OBJ_50 /* Build configuration list for PBXNativeTarget "PINOperationPackageDescription" */;
 			buildPhases = (
-				CC0105611E27117300890935 /* Sources */,
-				CC0105621E27117300890935 /* Frameworks */,
-				CC0105631E27117300890935 /* Resources */,
+				OBJ_53 /* Sources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CC01056C1E27117300890935 /* PBXTargetDependency */,
 			);
-			name = "PINOperation-tvOSTests";
-			productName = "PINOperation-tvOSTests";
-			productReference = CC0105651E27117300890935 /* PINOperation-tvOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		CC0105731E27117F00890935 /* PINOperation-macOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CC01057C1E27117F00890935 /* Build configuration list for PBXNativeTarget "PINOperation-macOSTests" */;
-			buildPhases = (
-				CC0105701E27117F00890935 /* Sources */,
-				CC0105711E27117F00890935 /* Frameworks */,
-				CC0105721E27117F00890935 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CC01057B1E27117F00890935 /* PBXTargetDependency */,
-			);
-			name = "PINOperation-macOSTests";
-			productName = "PINOperation-macOSTests";
-			productReference = CC0105741E27117F00890935 /* PINOperation-macOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = PINOperationPackageDescription;
+			productName = PINOperationPackageDescription;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CC0105241E27110D00890935 /* Project object */ = {
+		OBJ_1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = Pinterest;
-				TargetAttributes = {
-					CC01052C1E27110D00890935 = {
-						CreatedOnToolsVersion = 7.3.1;
-					};
-					CC01053C1E27113700890935 = {
-						CreatedOnToolsVersion = 7.3.1;
-					};
-					CC0105491E27114300890935 = {
-						CreatedOnToolsVersion = 7.3.1;
-					};
-					CC0105551E27116600890935 = {
-						CreatedOnToolsVersion = 7.3.1;
-					};
-					CC0105641E27117300890935 = {
-						CreatedOnToolsVersion = 7.3.1;
-					};
-					CC0105731E27117F00890935 = {
-						CreatedOnToolsVersion = 7.3.1;
-					};
-				};
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
 			};
-			buildConfigurationList = CC0105271E27110D00890935 /* Build configuration list for PBXProject "PINOperation" */;
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "PINOperation" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = en;
+			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				Base,
+				English,
 				en,
 			);
-			mainGroup = CC0105231E27110D00890935;
-			productRefGroup = CC01052E1E27110D00890935 /* Products */;
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_24 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CC01052C1E27110D00890935 /* PINOperation */,
-				CC0105551E27116600890935 /* PINOperationTests */,
-				CC01053C1E27113700890935 /* PINOperation-tvOS */,
-				CC0105641E27117300890935 /* PINOperation-tvOSTests */,
-				CC0105491E27114300890935 /* PINOperation-macOS */,
-				CC0105731E27117F00890935 /* PINOperation-macOSTests */,
+				"PINOperation::PINOperation" /* PINOperation */,
+				"PINOperation::SwiftPMPackageDescription" /* PINOperationPackageDescription */,
+				"PINOperation::PINOperationPackageTests::ProductTarget" /* PINOperationPackageTests */,
+				"PINOperation::PINOperationTests" /* PINOperationTests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		CC01052B1E27110D00890935 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CC01053B1E27113700890935 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CC0105481E27114300890935 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CC0105541E27116600890935 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CC0105631E27117300890935 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CC0105721E27117F00890935 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		CC0105281E27110D00890935 /* Sources */ = {
+		OBJ_45 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				CC01058D1E2711B700890935 /* PINOperationGroup.m in Sources */,
-				CC0105961E2711B700890935 /* PINOperationQueue.m in Sources */,
+				OBJ_46 /* PINOperationGroup.m in Sources */,
+				OBJ_47 /* PINOperationQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC0105381E27113700890935 /* Sources */ = {
+		OBJ_53 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				CC01058E1E2711B700890935 /* PINOperationGroup.m in Sources */,
-				CC0105971E2711B700890935 /* PINOperationQueue.m in Sources */,
+				OBJ_54 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC0105451E27114300890935 /* Sources */ = {
+		OBJ_64 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				CC01058F1E2711B700890935 /* PINOperationGroup.m in Sources */,
-				CC0105981E2711B700890935 /* PINOperationQueue.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CC0105521E27116600890935 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC0105A01E27131B00890935 /* PINOperationQueueTests.m in Sources */,
-				CC0105A41E27131B00890935 /* PINOperationGroupTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CC0105611E27117300890935 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC0105A11E27131B00890935 /* PINOperationQueueTests.m in Sources */,
-				CC0105A51E27131B00890935 /* PINOperationGroupTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CC0105701E27117F00890935 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC0105A21E27131B00890935 /* PINOperationQueueTests.m in Sources */,
-				CC0105A61E27131B00890935 /* PINOperationGroupTests.m in Sources */,
+				OBJ_65 /* PINOperationGroupTests.m in Sources */,
+				OBJ_66 /* PINOperationQueueTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CC01055D1E27116600890935 /* PBXTargetDependency */ = {
+		OBJ_59 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CC01052C1E27110D00890935 /* PINOperation */;
-			targetProxy = CC01055C1E27116600890935 /* PBXContainerItemProxy */;
+			target = "PINOperation::PINOperationTests" /* PINOperationTests */;
+			targetProxy = 0A8F15422310245900AA7D8B /* PBXContainerItemProxy */;
 		};
-		CC01056C1E27117300890935 /* PBXTargetDependency */ = {
+		OBJ_69 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CC01053C1E27113700890935 /* PINOperation-tvOS */;
-			targetProxy = CC01056B1E27117300890935 /* PBXContainerItemProxy */;
-		};
-		CC01057B1E27117F00890935 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CC0105491E27114300890935 /* PINOperation-macOS */;
-			targetProxy = CC01057A1E27117F00890935 /* PBXContainerItemProxy */;
+			target = "PINOperation::PINOperation" /* PINOperation */;
+			targetProxy = 0A8F15412310245900AA7D8B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		CC0105331E27110D00890935 /* Debug */ = {
+		OBJ_3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
 					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
 				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
 			};
 			name = Debug;
 		};
-		CC0105341E27110D00890935 /* Release */ = {
+		OBJ_4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Sources/PINOperation/include",
+				);
+				INFOPLIST_FILE = "$(PROJECT_DIR)/Sources/PINOperation/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		CC0105361E27110D00890935 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pinterest.PINOperation;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = PINOperation;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		CC0105371E27110D00890935 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pinterest.PINOperation;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		CC0105431E27113700890935 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pinterest.PINOperation;
-				PRODUCT_NAME = PINOperation;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 3;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				TARGET_NAME = PINOperation;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
-		CC0105441E27113700890935 /* Release */ = {
+		OBJ_44 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pinterest.PINOperation;
-				PRODUCT_NAME = PINOperation;
-				SDKROOT = appletvos;
+				DEFINES_MODULE = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Sources/PINOperation/include",
+				);
+				INFOPLIST_FILE = "$(PROJECT_DIR)/Sources/PINOperation/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = PINOperation;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 3;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				TARGET_NAME = PINOperation;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
-		CC0105501E27114300890935 /* Debug */ = {
+		OBJ_51 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pinterest.PINOperation;
-				PRODUCT_NAME = PINOperation;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
+				INFOPLIST_FILE = "$(PROJECT_DIR)/Sources/PINOperation/Info.plist";
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		CC0105511E27114300890935 /* Release */ = {
+		OBJ_52 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pinterest.PINOperation;
-				PRODUCT_NAME = PINOperation;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
+				INFOPLIST_FILE = "$(PROJECT_DIR)/Sources/PINOperation/Info.plist";
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
-		CC01055F1E27116600890935 /* Debug */ = {
+		OBJ_57 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pinterest.PINOperationTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		CC0105601E27116600890935 /* Release */ = {
+		OBJ_58 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pinterest.PINOperationTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
-		CC01056E1E27117300890935 /* Debug */ = {
+		OBJ_62 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pinterest.PINOperation-tvOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Sources/PINOperationTests/include",
+					"$(SRCROOT)/Sources/PINOperation/include",
+				);
+				INFOPLIST_FILE = "$(PROJECT_DIR)/Sources/PINOperationTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				TARGET_NAME = PINOperationTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
-		CC01056F1E27117300890935 /* Release */ = {
+		OBJ_63 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pinterest.PINOperation-tvOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
-			};
-			name = Release;
-		};
-		CC01057D1E27117F00890935 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pinterest.PINOperation-macOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		CC01057E1E27117F00890935 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pinterest.PINOperation-macOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Sources/PINOperationTests/include",
+					"$(SRCROOT)/Sources/PINOperation/include",
+				);
+				INFOPLIST_FILE = "$(PROJECT_DIR)/Sources/PINOperationTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				TARGET_NAME = PINOperationTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CC0105271E27110D00890935 /* Build configuration list for PBXProject "PINOperation" */ = {
+		OBJ_2 /* Build configuration list for PBXProject "PINOperation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CC0105331E27110D00890935 /* Debug */,
-				CC0105341E27110D00890935 /* Release */,
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CC0105351E27110D00890935 /* Build configuration list for PBXNativeTarget "PINOperation" */ = {
+		OBJ_42 /* Build configuration list for PBXNativeTarget "PINOperation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CC0105361E27110D00890935 /* Debug */,
-				CC0105371E27110D00890935 /* Release */,
+				OBJ_43 /* Debug */,
+				OBJ_44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CC0105421E27113700890935 /* Build configuration list for PBXNativeTarget "PINOperation-tvOS" */ = {
+		OBJ_50 /* Build configuration list for PBXNativeTarget "PINOperationPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CC0105431E27113700890935 /* Debug */,
-				CC0105441E27113700890935 /* Release */,
+				OBJ_51 /* Debug */,
+				OBJ_52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CC01054F1E27114300890935 /* Build configuration list for PBXNativeTarget "PINOperation-macOS" */ = {
+		OBJ_56 /* Build configuration list for PBXAggregateTarget "PINOperationPackageTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CC0105501E27114300890935 /* Debug */,
-				CC0105511E27114300890935 /* Release */,
+				OBJ_57 /* Debug */,
+				OBJ_58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CC01055E1E27116600890935 /* Build configuration list for PBXNativeTarget "PINOperationTests" */ = {
+		OBJ_61 /* Build configuration list for PBXNativeTarget "PINOperationTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CC01055F1E27116600890935 /* Debug */,
-				CC0105601E27116600890935 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CC01056D1E27117300890935 /* Build configuration list for PBXNativeTarget "PINOperation-tvOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CC01056E1E27117300890935 /* Debug */,
-				CC01056F1E27117300890935 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CC01057C1E27117F00890935 /* Build configuration list for PBXNativeTarget "PINOperation-macOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CC01057D1E27117F00890935 /* Debug */,
-				CC01057E1E27117F00890935 /* Release */,
+				OBJ_62 /* Debug */,
+				OBJ_63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CC0105241E27110D00890935 /* Project object */;
+	rootObject = OBJ_1 /* Project object */;
 }
