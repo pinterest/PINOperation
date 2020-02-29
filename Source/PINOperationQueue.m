@@ -377,6 +377,12 @@
     [self lock];
       PINOperation *operation = [self locked_nextOperationByPriority];
     [self unlock];
+    
+    NSString *test = @"Great!";
+    
+    if (YES) {
+      test = @"super great";
+    }
   
     if (operation) {
       dispatch_async(self->_concurrentQueue, ^{
