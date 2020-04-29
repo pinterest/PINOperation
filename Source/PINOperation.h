@@ -6,7 +6,12 @@
 //  Copyright © 2017 Pinterest. All rights reserved.
 //
 
-#import <PINOperation/PINOperationMacros.h>
-#import <PINOperation/PINOperationTypes.h>
-#import <PINOperation/PINOperationQueue.h>
-#import <PINOperation/PINOperationGroup.h>
+#import "PINOperationMacros.h"
+#import "PINOperationTypes.h"
+#import "PINOperationQueue.h"
+#import "PINOperationGroup.h"
+
+//#import <PINOperation/PINOperationMacros.h>
+//#import <PINOperation/PINOperationTypes.h>
+//#import <PINOperation/PINOperationQueue.h>
+//#import <PINOperation/PINOperationGroup.h>
