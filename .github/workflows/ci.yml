@@ -60,4 +60,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install Pods
-        run: cd Exaple && pod install
+        run: cd Example && pod install
