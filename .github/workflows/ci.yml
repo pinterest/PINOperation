@@ -18,7 +18,7 @@ jobs:
       matrix:
         platform: ['iOS Simulator,name=iPhone 8']
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - name: Analyze and Test
         run: |
           xcodebuild clean analyze test \
@@ -37,14 +37,14 @@ jobs:
     name: CocoaPods
     runs-on: macOS-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - name: Lint
         run: pod lib lint
   carthage:
     name: Carthage
     runs-on: macOS-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - name: Build
         run: carthage build --no-skip-current
   spm:
@@ -54,3 +54,10 @@ jobs:
       - uses: actions/checkout@v2
       - name: Test
         run: swift test
+  example:
+    name: Build Example project
+    runs-on: macOS-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Pods
+        run: cd Exaple && pod install
