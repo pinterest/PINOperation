@@ -51,27 +51,3 @@ jobs:
         uses: actions/checkout@v2
       - name: Verify that PINCache can be build by SPM
         run: make spm
-  example:
-    name: Build Example project
-    runs-on: macOS-latest
-    strategy:
-      matrix:
-        platform: ['iOS Simulator,name=iPhone 8']
-    steps:
-      - uses: actions/checkout@v2
-      - name: Install Pods
-        run: cd Example && pod install
-      - name: Build 
-        run: |
-          cd Example && xcodebuild clean analyze \
-            -destination "platform=${{ matrix.platform }}" \
-            -sdk "iphonesimulator" \
-            -workspace PINOperationExample.xcworkspace \
-            -scheme PINOperationExample \
-            ONLY_ACTIVE_ARCH=NO \
-            CODE_SIGNING_REQUIRED=NO \
-            CLANG_ANALYZER_OUTPUT=plist-html \
-            CLANG_ANALYZER_OUTPUT_DIR="$(pwd)/clang" \
-          | xcpretty
-          if [[ -n `find $(pwd)/clang -name "*.html"` ]] ; then rm -rf $(pwd)/clang; exit 1; fi
-          rm -rf $(pwd)/clang

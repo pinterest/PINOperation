@@ -2,12 +2,12 @@ PLATFORM="platform=iOS Simulator,name=iPhone 7"
 SDK="iphonesimulator"
 SHELL=/bin/bash -o pipefail
 
-.PHONY: all lint test analyze carthage spm
+.PHONY: all cocoapods test analyze carthage spm
 	
 carthage:
 	carthage build --no-skip-current
 
-lint:
+cocoapods:
 	pod lib lint
 
 analyze:
@@ -30,4 +30,4 @@ spm:
 # https://bugs.swift.org/browse/SR-13560
 	swift build
 
-all: carthage lint test analyze spm
+all: carthage cocoapods test analyze spm
