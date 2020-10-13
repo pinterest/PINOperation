@@ -2,7 +2,7 @@ PLATFORM="platform=iOS Simulator,name=iPhone 7"
 SDK="iphonesimulator"
 SHELL=/bin/bash -o pipefail
 
-.PHONY: all lint test analyze carthage
+.PHONY: all lint test analyze carthage spm
 	
 carthage:
 	carthage build --no-skip-current
@@ -24,4 +24,10 @@ test:
 	ONLY_ACTIVE_ARCH=NO \
 	CODE_SIGNING_REQUIRED=NO | xcpretty
 
-all: carthage lint test analyze
+spm:
+# For now just check whether we can assemble it
+# TODO: replace it with "swift test --enable-test-discovery --sanitize=thread" when swiftPM resource-related bug would be fixed.
+# https://bugs.swift.org/browse/SR-13560
+	swift build
+
+all: carthage lint test analyze spm
