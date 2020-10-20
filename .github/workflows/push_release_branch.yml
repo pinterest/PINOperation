@@ -12,5 +12,6 @@ jobs:
   steps:
     - uses: actions/checkouts@v2
       name: Create Release Branch
-      env: GITHUB_CHANGELOG_API_KEY: ${{ secrets.GITHUB_TOKEN }}
+      env:
+        GITHUB_CHANGELOG_API_KEY: ${{ secrets.GITHUB_TOKEN }}
       run: Scripts/release.sh --${{ github.event.inputs.release-type }}
