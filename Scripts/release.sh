@@ -19,6 +19,9 @@ if [ -z "$GITHUB_CHANGELOG_API_KEY" ]; then
     exit 1
 fi
 
+# Make sure we're up to date
+git pull --rebase origin master
+
 case $1 in
     "--major")
         UPDATE_TYPE="major"
