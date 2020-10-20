@@ -3,11 +3,11 @@ set -e
 
 PROJECT=PINOperation
 
-BRANCH=$(git rev-parse --abbrev-ref HEAD)
-if [[ "$BRANCH" != "master" ]]; then
-    echo "Please run on master branch."
-    exit 1
-fi
+# BRANCH=$(git rev-parse --abbrev-ref HEAD)
+# if [[ "$BRANCH" != "master" ]]; then
+#     echo "Please run on master branch."
+#     exit 1
+# fi
 
 if ! git diff-index --quiet HEAD --; then
     echo "Please commit or stash any changes before running."
@@ -18,9 +18,6 @@ if [ -z "$GITHUB_CHANGELOG_API_KEY" ]; then
     echo "Must set \$GITHUB_CHANGELOG_API_KEY environment variable"
     exit 1
 fi
-
-# Make sure we're up to date
-git pull --rebase origin master
 
 case $1 in
     "--major")
