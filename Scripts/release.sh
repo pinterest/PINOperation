@@ -80,9 +80,9 @@ EOF
 github_changelog_generator --token $GITHUB_CHANGELOG_API_KEY --user Pinterest --project $PROJECT --output NEW_CHANGES.md
 
 # Delete the last line and then use a magic sed command the internet told me 
-# to delete trailing newlines
+# to delete trailing newlines (except the last one)
 # Then prepend to existing changelog
-grep -v "\*" NEW_CHANGES.md | sed -e :a -e '/^\n*$/{$d;N;};/\n$/ba' | cat - CHANGELOG.md > CHANGELOG.tmp
+grep -v "\*" NEW_CHANGES.md | sed -e :a -e '/^\n*$/{$d;N;};/\n$/ba' -e '$a\' | cat - CHANGELOG.md > CHANGELOG.tmp
 mv CHANGELOG.tmp CHANGELOG.md
 rm NEW_CHANGES.md
 

@@ -1,0 +1,21 @@
+name: Publish Release
+on:
+  workflow_dispatch:
+jobs:
+  create_release:
+    runs-on: macOS-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Tag Release and Delete Branch
+        run: Scripts/tag-release-branch.sh
+      - name: Publish Release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_CHANGELOG_API_KEY: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ RELEASE_TAG }}
+          release_name: ${{ RELEASE_TAG }}
+          body: |
+            ${{ CHANGELOG }}
+          draft: true

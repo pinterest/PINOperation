@@ -6,7 +6,7 @@ on:
         description: 'The type of release. Must be major, minor or patch'
         required: true
 jobs:
-  create_release:
+  create_release_branch:
     runs-on: macOS-latest
     steps:
       - uses: actions/checkout@v2
