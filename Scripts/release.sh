@@ -25,7 +25,7 @@ case $1 in
     "--patch")
         UPDATE_TYPE="patch"
         ;;
-    
+
     *)
         echo "Usage release.sh --patch / --minor / --major"
         exit 1
@@ -80,10 +80,13 @@ EOF
 
 github_changelog_generator --token $GITHUB_CHANGELOG_API_KEY --user Pinterest --project $PROJECT --output NEW_CHANGES.md
 
-# Delete the last line and first line then use a magic sed command the internet told me 
+# Delete # Changelog at the top of the old CHANGELOG
+grep -v "# Changelog" CHANGELOG.md > CHANGELOG.tmp && mv CHANGELOG.tmp CHANGELOG.md
+
+# Delete the last line and first line then use a magic sed command the internet told me
 # about to delete trailing newlines (except the last one)
 # Then prepend to existing changelog
-grep -vE "\*|# Changelog" NEW_CHANGES.md | sed -e :a -e '/^\n*$/{$d;N;};/\n$/ba' -e '$a\' | cat - CHANGELOG.md > CHANGELOG.tmp
+grep -v "\*" NEW_CHANGES.md | sed -e :a -e '/^\n*$/{$d;N;};/\n$/ba' | cat - CHANGELOG.md > CHANGELOG.tmp
 mv CHANGELOG.tmp CHANGELOG.md
 rm NEW_CHANGES.md
 
