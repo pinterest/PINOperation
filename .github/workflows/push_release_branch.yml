@@ -1,5 +1,4 @@
 name: Create Release Branch
-description: 'Updates .podspec, CHANGELOG.md and pushes a release branch.'
 on:
   workflow_dispatch:
     inputs:
