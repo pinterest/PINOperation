@@ -3,12 +3,6 @@ set -e
 
 PROJECT=PINOperation
 
-# BRANCH=$(git rev-parse --abbrev-ref HEAD)
-# if [[ "$BRANCH" != "master" ]]; then
-#     echo "Please run on master branch."
-#     exit 1
-# fi
-
 if ! git diff-index --quiet HEAD --; then
     echo "Please commit or stash any changes before running."
     exit 1
@@ -39,7 +33,6 @@ case $1 in
 esac
 
 PODSPEC="$PROJECT.podspec"
-PODSPEC=`echo $PODSPEC`
 CURRENT_VERSION=`grep "version" -m 1 $PODSPEC | sed -E "s/^.*version[ \t]*=[ \t]*'([0-9\.]+)'/\1/"`
 DOT_COUNT=`echo "$CURRENT_VERSION" | grep -o '\.' | wc -l`
 
