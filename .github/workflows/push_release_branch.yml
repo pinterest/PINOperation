@@ -14,4 +14,4 @@ jobs:
       - name: Create Release Branch
         env:
           GITHUB_CHANGELOG_API_KEY: ${{ secrets.GITHUB_TOKEN }}
-        run: Scripts/release.sh --${{ github.event.inputs.release-type }}
+        run: Scripts/release.sh --${{ github.event.inputs.release-type }} && git push origin HEAD
