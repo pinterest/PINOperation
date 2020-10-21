@@ -2,7 +2,7 @@
 set -ex
 
 echo "Tagging release branch"
-TAG=v$(echo "$BRANCH" | sed 's/release-//')
+TAG=v$NEW_VERSION
 
 echo "RELEASE_TAG=$TAG" >> $GITHUB_ENV
 git tag $TAG
