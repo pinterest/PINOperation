@@ -28,6 +28,5 @@ echo "Deleting release branch"
 git branch -d $BRANCH
 git push origin --delete $BRANCH
 
-echo "Setting changelog"
-CHANGELOG=$(cat CHANGELOG.md | awk '/^#/{f=1} f; /^#/ && ++c==3{exit}' | sed '$ d')
-echo "CHANGELOG=$CHANGELOG" >> $GITHUB_ENV
+echo "Setting Release Notes"
+cat CHANGELOG.md | awk '/^#/{f=1} f; /^#/ && ++c==3{exit}' | sed '$ d' > RELEASE_NOTES.md
