@@ -14,8 +14,8 @@ jobs:
         env:
           GITHUB_CHANGELOG_API_KEY: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ RELEASE_TAG }}
-          release_name: ${{ RELEASE_TAG }}
+          tag_name: ${{ env.RELEASE_TAG }}
+          release_name: ${{ env.RELEASE_TAG }}
           body: |
-            ${{ CHANGELOG }}
+            ${{ env.CHANGELOG }}
           draft: true
