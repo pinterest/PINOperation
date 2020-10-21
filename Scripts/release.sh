@@ -86,6 +86,5 @@ grep -v "\*" NEW_CHANGES.md | sed -e :a -e '/^\n*$/{$d;N;};/\n$/ba' -e '$a\' | c
 mv CHANGELOG.tmp CHANGELOG.md
 rm NEW_CHANGES.md
 
-git checkout -b "release-$NEW_VERSION"
 git add .github_changelog_generator CHANGELOG.md $PODSPEC
 git commit --message "[AUTO] Update CHANGELOG.md and bump for $UPDATE_TYPE update."

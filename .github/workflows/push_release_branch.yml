@@ -1,4 +1,4 @@
-name: Create Release Branch
+name: Create Release
 on:
   workflow_dispatch:
     inputs:
@@ -17,3 +17,20 @@ jobs:
           gem install github_changelog_generator
           Scripts/release.sh --${{ github.event.inputs.release-type }}
           git push origin HEAD
+  create_release:
+    runs-on: macOS-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Tag Release
+        run: Scripts/tag-release-branch.sh
+      - name: Publish Release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_CHANGELOG_API_KEY: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ env.RELEASE_TAG }}
+          release_name: ${{ env.RELEASE_TAG }}
+          body_path: RELEASE_NOTES.md
+          draft: true
