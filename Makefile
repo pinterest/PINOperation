@@ -1,10 +1,15 @@
 PLATFORM="platform=iOS Simulator,name=iPhone 8"
 SDK="iphonesimulator"
 SHELL=/bin/bash -o pipefail
+XCODE_MAJOR_VERSION=$(shell xcodebuild -version | HEAD -n 1 | sed -E 's/Xcode ([0-9]+).*/\1/')
 
 .PHONY: all cocoapods test analyze carthage spm
 	
 carthage:
+	if [ ${XCODE_MAJOR_VERSION} -gt 11 ] ; then \
+		echo "Carthage no longer works in Xcode 12 https://github.com/Carthage/Carthage/blob/master/Documentation/Xcode12Workaround.md"; \
+		exit 1; \
+	fi
 	carthage build --no-skip-current
 
 cocoapods:
@@ -29,5 +34,12 @@ spm:
 # TODO: replace it with "swift test --enable-test-discovery --sanitize=thread" when swiftPM resource-related bug would be fixed.
 # https://bugs.swift.org/browse/SR-13560
 	swift build
+
+release-major:
+
+release-minor:
+
+release-patch:
+	
 
 all: carthage cocoapods test analyze spm
