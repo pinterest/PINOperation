@@ -17,6 +17,7 @@ jobs:
       - name: Build and archive framework for Carthage users
         env:
           DEVELOPER_DIR: /Applications/Xcode_11.7.app/Contents/Developer
+        run: carthage build --no-skip-current && carthage archive
       - name: Create Release Commit
         env:
           GITHUB_CHANGELOG_API_KEY: ${{ secrets.GITHUB_TOKEN }}
