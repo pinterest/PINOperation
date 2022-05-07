@@ -6,11 +6,7 @@ XCODE_MAJOR_VERSION=$(shell xcodebuild -version | HEAD -n 1 | sed -E 's/Xcode ([
 .PHONY: all cocoapods test analyze carthage spm
 	
 carthage:
-	if [ ${XCODE_MAJOR_VERSION} -gt 11 ] ; then \
-		echo "Carthage no longer works in Xcode 12 https://github.com/Carthage/Carthage/blob/master/Documentation/Xcode12Workaround.md"; \
-		exit 1; \
-	fi
-	carthage build --no-skip-current
+	carthage build --no-skip-current --use-xcframeworks
 
 cocoapods:
 	pod lib lint
