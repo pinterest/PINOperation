@@ -9,7 +9,7 @@ carthage:
 	carthage build --no-skip-current --use-xcframeworks
 
 cocoapods:
-	pod lib lint --platforms=ios,osx,tvos
+	pod lib lint
 
 install_xcbeautify:
 	if ! command -v xcbeautify &> /dev/null; then brew install xcbeautify; fi
