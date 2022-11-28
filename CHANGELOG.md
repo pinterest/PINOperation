@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.2.2](https://github.com/Pinterest/PINOperation/tree/1.2.2) (2022-11-28)
+
+[Full Changelog](https://github.com/Pinterest/PINOperation/compare/1.2.1...1.2.2)
+
+
+- Update CI to modern xcode and fix Carthage [\#47](https://github.com/pinterest/PINOperation/pull/47) ([garrettmoon](https://github.com/garrettmoon))
+- Disable asserts in release builds when using Swift Package Manager [\#44](https://github.com/pinterest/PINOperation/pull/44) ([rcancro](https://github.com/rcancro))
+- Carthage is busted on Xcode 12 [\#41](https://github.com/pinterest/PINOperation/pull/41) ([garrettmoon](https://github.com/garrettmoon))
+- Latest release script [\#40](https://github.com/pinterest/PINOperation/pull/40) ([garrettmoon](https://github.com/garrettmoon))
+- Fixes for automated release process [\#39](https://github.com/pinterest/PINOperation/pull/39) ([garrettmoon](https://github.com/garrettmoon))
+
 ## [1.2.1](https://github.com/Pinterest/PINOperation/tree/1.2.1) (2020-10-22)
 
 [Full Changelog](https://github.com/Pinterest/PINOperation/compare/1.2...1.2.1)
