@@ -16,7 +16,7 @@ jobs:
     runs-on: macos-latest
     strategy:
       matrix:
-        platform: ['iOS Simulator,name=iPhone 14']
+        platform: ['iOS Simulator,name=iPhone 13']
     steps:
       - uses: actions/checkout@v2
       - uses: maxim-lobanov/setup-xcode@v1
