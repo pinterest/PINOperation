@@ -7,10 +7,13 @@ on:
         required: true
 jobs:
   create_release:
-    runs-on: macOS-latest
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
       # Make sure we can lint before creating the release.
+      - uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: '13.4.1'
       - name: Cocoapods lint
         run: make cocoapods
       - name: Create Release Commit
