@@ -44,6 +44,8 @@
 - Updates BUCK build file to match source layout. [\#20](https://github.com/pinterest/PINOperation/pull/20) ([RCacheaux](https://github.com/RCacheaux))
 - 1.1.1 release [\#19](https://github.com/pinterest/PINOperation/pull/19) ([garrettmoon](https://github.com/garrettmoon))
 
+- [fix] Fix group can add operations and set completion multiple times when the group start. [#22](https://github.com/pinterest/PINOperation/pull/22)
+
 ## 1.1.1 -- 2018 February 3
 * Cleanup warnings [garrett](https://github.com/garrettmoon)
 
