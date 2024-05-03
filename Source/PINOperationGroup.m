@@ -76,6 +76,7 @@
   [self lock];
     NSAssert(_canceled == NO, @"Operation group canceled.");
     if (_started == NO && _canceled == NO) {
+      _started = YES;
       for (NSUInteger idx = 0; idx < _operations.count; idx++) {
         dispatch_group_enter(_group);
         dispatch_block_t originalOperation = _operations[idx];
@@ -167,6 +168,7 @@
   [self lock];
     completion = _completion;
     _completion = nil;
+    _started = NO;
   [self unlock];
 
   if (completion) {
