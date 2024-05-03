@@ -82,6 +82,7 @@
         dispatch_block_t groupBlock = ^{
           originalOperation();
           dispatch_group_leave(self->_group);
+          [self removeOperationReferenceWithIndex:idx];
         };
         
         id <PINOperationReference> operationReference = [_operationQueue scheduleOperation:groupBlock withPriority:[_operationPriorities[idx] unsignedIntegerValue]];
@@ -94,10 +95,6 @@
           [self runCompletionIfNeeded];
         });
       }
-      
-      _operations = nil;
-      _operationPriorities = nil;
-      _operationReferences = nil;
     }
   [self unlock];
 }
@@ -113,14 +110,28 @@
       }
     }
   
-    //TODO just nil out instead? Does it make sense to support adding operations after cancelation?
-    [_groupToOperationReferences removeAllObjects];
-    [_operations removeAllObjects];
-    [_operationPriorities removeAllObjects];
-    [_operationReferences removeAllObjects];
+    //Make sense to support adding operations after completion or cancelation
+    [self locked_removeAllOperations];
     
     _completion = nil;
   [self unlock];
+}
+
+- (void)removeOperationReferenceWithIndex:(NSUInteger)index
+{
+  [self lock];
+    if (index < _operationReferences.count) {
+      [_groupToOperationReferences removeObjectForKey:_operationReferences[index]];
+    }
+  [self unlock];
+}
+
+- (void)locked_removeAllOperations
+{
+  [_groupToOperationReferences removeAllObjects];
+  [_operations removeAllObjects];
+  [_operationPriorities removeAllObjects];
+  [_operationReferences removeAllObjects];
 }
 
 - (id <PINGroupOperationReference>)addOperation:(dispatch_block_t)operation
@@ -167,6 +178,7 @@
   [self lock];
     completion = _completion;
     _completion = nil;
+    [self locked_removeAllOperations];
   [self unlock];
 
   if (completion) {
